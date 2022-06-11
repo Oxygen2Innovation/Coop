@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1654319858",
+        "python_version": "3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\Ml Train\\Coop\\MLTrain\\Scripts\\mlagents-learn results\\poca_training_1\\configuration.yaml --time-scale=10 --quality-level=0 --no-graphics --torch-device=cuda --run-id=poca_training_1 --resume",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1654319872"
+    },
+    "total": 13.2391395,
+    "count": 1,
+    "self": 0.007274099999998285,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07293070000000001,
+            "count": 1,
+            "self": 0.07293070000000001
+        },
+        "TrainerController.start_learning": {
+            "total": 13.158934700000001,
+            "count": 1,
+            "self": 0.0003137000000013046,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 13.158611,
+                    "count": 1,
+                    "self": 13.158611
+                },
+                "trainer_threads": {
+                    "total": 1.4000000003733248e-06,
+                    "count": 1,
+                    "self": 1.4000000003733248e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 8.599999999248098e-06,
+                    "count": 1,
+                    "self": 8.599999999248098e-06
+                }
+            }
+        }
+    }
+}

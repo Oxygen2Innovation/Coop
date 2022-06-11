@@ -1,0 +1,51 @@
+{
+    "deffender": {
+        "checkpoints": [
+            {
+                "steps": 2100,
+                "file_path": "results\\ppo\\deffender\\deffender-2100.onnx",
+                "reward": 0.6,
+                "creation_time": 1654235650.7604735,
+                "auxillary_file_paths": [
+                    "results\\ppo\\deffender\\deffender-2100.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2100,
+            "file_path": "results\\ppo\\deffender.onnx",
+            "reward": 0.6,
+            "creation_time": 1654235650.7604735,
+            "auxillary_file_paths": [
+                "results\\ppo\\deffender\\deffender-2100.pt"
+            ]
+        }
+    },
+    "striker": {
+        "checkpoints": [
+            {
+                "steps": 2179,
+                "file_path": "results\\ppo\\striker\\striker-2179.onnx",
+                "reward": 0.24390243902439024,
+                "creation_time": 1654235650.8262978,
+                "auxillary_file_paths": [
+                    "results\\ppo\\striker\\striker-2179.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2179,
+            "file_path": "results\\ppo\\striker.onnx",
+            "reward": 0.24390243902439024,
+            "creation_time": 1654235650.8262978,
+            "auxillary_file_paths": [
+                "results\\ppo\\striker\\striker-2179.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

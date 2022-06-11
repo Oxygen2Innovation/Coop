@@ -57,3 +57,14 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+Coop/MLTrain/Lib/site-packages/torch/lib/cublasLt64_11.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cudnn_cnn_infer64_8.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cudnn_ops_infer64_8.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cufft64_10.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cusolver64_10.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cusolverMg64_10.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/cusparse64_11.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/dnnl.lib
+Coop/MLTrain/Lib/site-packages/torch/lib/mkldnn.lib
+Coop/MLTrain/Lib/site-packages/torch/lib/torch_cpu.dll
+Coop/MLTrain/Lib/site-packages/torch/lib/torch_cuda.dll

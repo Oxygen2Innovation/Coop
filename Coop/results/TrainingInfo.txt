@@ -1,0 +1,4 @@
+mlagents-learn results\poca_training_1\configuration.yaml --time-scale=10 --quality-level=0 --no-graphics --torch-device=cuda --run-id=poca_training_1 --resume
+
+
+mlagents-learn results\poca_training_1_server\configuration.yaml --env=Server\Coop --no-graphics --run-id=poca_training_1_server --resume

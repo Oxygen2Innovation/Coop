@@ -1,0 +1,65 @@
+
+team_coop
+
+m_RedAgentGroup.AddGroupReward(0.001f * fc * fc);
+m_BlueAgentGroup.AddGroupReward(-0.001f * fc * fc);
+if (col.gameObject.CompareTag("goal") && (col.transform.tag == "blue"))
+        {
+            print("Blue Entered Goal");
+            m_BlueAgentGroup.AddGroupReward(2f);
+            m_RedAgentGroup.AddGroupReward(-2f);
+            bluewins++;
+            ResetScene();
+        }
+void StrikerHit(IndivisualPlayer col)
+    {
+        if (col.gameObject.CompareTag("red") && (col.transform.tag == "blue"))
+        {
+            print("red hit blue");
+            m_BlueAgentGroup.AddGroupReward(-20f);
+            m_RedAgentGroup.AddGroupReward(20f);
+            ResetScene();
+        }
+    }
+void ClosestStrikerPunishment(IndivisualPlayer col)
+    {
+        if (col.tag == "blue")
+        {
+            m_BlueAgentGroup.AddGroupReward(1.6f/(MaxEnvironmentSteps* Vector3.Magnitude(col.transform.localPosition - goal.transform.localPosition)));
+        }
+    }
+
+
+
+IndivisualPlayer
+
+void OnCollisionEnter(Collision c)
+    {
+
+        if (c.gameObject.CompareTag("goal") && transform.tag == "blue")
+        {
+            AddReward(20f);
+            envController.ResetScene();
+        }
+        if (c.gameObject.CompareTag("reset_boundary") && (transform.tag == "blue" || transform.tag == "red"))
+        {
+            AddReward(-1f);
+            envController.ResetScene();
+        }
+        if (c.gameObject.CompareTag("red") && transform.tag == "blue")
+        {
+            AddReward(-2f);
+            envController.m_BlueAgentGroup.AddGroupReward(-20);
+            IsAlive = false;
+            envController.m_BlueAgentGroupCount--;
+        }
+        if (c.gameObject.CompareTag("blue") && transform.tag == "red")
+        {
+            AddReward(2f);
+            envController.m_BlueAgentGroup.AddGroupReward(20);
+            IsAlive = false;
+            envController.m_RedAgentGroupCount--;
+
+            //envController.ResetScene();
+        }
+    }
