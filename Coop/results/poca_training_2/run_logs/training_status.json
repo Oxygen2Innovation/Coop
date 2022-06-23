@@ -1,0 +1,96 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    },
+    "deffender": {
+        "checkpoints": [
+            {
+                "steps": 39449989,
+                "file_path": "results\\poca_training_2\\deffender\\deffender-39449989.onnx",
+                "reward": 0.6158357771260997,
+                "creation_time": 1655287921.012721,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\deffender\\deffender-39449989.pt"
+                ]
+            },
+            {
+                "steps": 39499997,
+                "file_path": "results\\poca_training_2\\deffender\\deffender-39499997.onnx",
+                "reward": 0.41964285714285715,
+                "creation_time": 1655288397.182896,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\deffender\\deffender-39499997.pt"
+                ]
+            },
+            {
+                "steps": 39549999,
+                "file_path": "results\\poca_training_2\\deffender\\deffender-39549999.onnx",
+                "reward": 0.0,
+                "creation_time": 1655288860.0979533,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\deffender\\deffender-39549999.pt"
+                ]
+            },
+            {
+                "steps": 39552742,
+                "file_path": "results\\poca_training_2\\deffender\\deffender-39552742.onnx",
+                "reward": 0.0006015037593984962,
+                "creation_time": 1655288964.562839,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\deffender\\deffender-39552742.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 39552742,
+            "file_path": "results\\poca_training_2\\deffender.onnx",
+            "reward": 0.0006015037593984962,
+            "creation_time": 1655288964.562839,
+            "auxillary_file_paths": [
+                "results\\poca_training_2\\deffender\\deffender-39552742.pt"
+            ]
+        }
+    },
+    "striker": {
+        "checkpoints": [
+            {
+                "steps": 39399989,
+                "file_path": "results\\poca_training_2\\striker\\striker-39399989.onnx",
+                "reward": 4.405994550408719,
+                "creation_time": 1655288199.9789083,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\striker\\striker-39399989.pt"
+                ]
+            },
+            {
+                "steps": 39449969,
+                "file_path": "results\\poca_training_2\\striker\\striker-39449969.onnx",
+                "reward": 4.295238095238095,
+                "creation_time": 1655288534.161418,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\striker\\striker-39449969.pt"
+                ]
+            },
+            {
+                "steps": 39481855,
+                "file_path": "results\\poca_training_2\\striker\\striker-39481855.onnx",
+                "reward": 0.0056022408963585435,
+                "creation_time": 1655288964.6815221,
+                "auxillary_file_paths": [
+                    "results\\poca_training_2\\striker\\striker-39481855.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 39481855,
+            "file_path": "results\\poca_training_2\\striker.onnx",
+            "reward": 0.0056022408963585435,
+            "creation_time": 1655288964.6815221,
+            "auxillary_file_paths": [
+                "results\\poca_training_2\\striker\\striker-39481855.pt"
+            ]
+        }
+    }
+}

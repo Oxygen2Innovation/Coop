@@ -1,0 +1,51 @@
+{
+    "striker": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\correct1\\striker\\striker-0.onnx",
+                "reward": null,
+                "creation_time": 1655202760.2350998,
+                "auxillary_file_paths": [
+                    "results\\correct1\\striker\\striker-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\correct1\\striker.onnx",
+            "reward": null,
+            "creation_time": 1655202760.2350998,
+            "auxillary_file_paths": [
+                "results\\correct1\\striker\\striker-0.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    },
+    "deffender": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\correct1\\deffender\\deffender-0.onnx",
+                "reward": null,
+                "creation_time": 1655202835.2064612,
+                "auxillary_file_paths": [
+                    "results\\correct1\\deffender\\deffender-0.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\correct1\\deffender.onnx",
+            "reward": null,
+            "creation_time": 1655202835.2064612,
+            "auxillary_file_paths": [
+                "results\\correct1\\deffender\\deffender-0.pt"
+            ]
+        }
+    }
+}

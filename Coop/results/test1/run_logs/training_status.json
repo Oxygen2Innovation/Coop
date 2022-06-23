@@ -1,0 +1,87 @@
+{
+    "deffender": {
+        "checkpoints": [
+            {
+                "steps": 6655,
+                "file_path": "results\\test1\\deffender\\deffender-6655.onnx",
+                "reward": 0.5542168674698795,
+                "creation_time": 1655102110.8108697,
+                "auxillary_file_paths": [
+                    "results\\test1\\deffender\\deffender-6655.pt"
+                ]
+            },
+            {
+                "steps": 6821,
+                "file_path": "results\\test1\\deffender\\deffender-6821.onnx",
+                "reward": 1.25,
+                "creation_time": 1655102372.7871416,
+                "auxillary_file_paths": [
+                    "results\\test1\\deffender\\deffender-6821.pt"
+                ]
+            },
+            {
+                "steps": 7157,
+                "file_path": "results\\test1\\deffender\\deffender-7157.onnx",
+                "reward": 0.9166666666666666,
+                "creation_time": 1655102476.24668,
+                "auxillary_file_paths": [
+                    "results\\test1\\deffender\\deffender-7157.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7157,
+            "file_path": "results\\test1\\deffender.onnx",
+            "reward": 0.9166666666666666,
+            "creation_time": 1655102476.24668,
+            "auxillary_file_paths": [
+                "results\\test1\\deffender\\deffender-7157.pt"
+            ]
+        }
+    },
+    "striker": {
+        "checkpoints": [
+            {
+                "steps": 5355,
+                "file_path": "results\\test1\\striker\\striker-5355.onnx",
+                "reward": 0.632,
+                "creation_time": 1655102110.880683,
+                "auxillary_file_paths": [
+                    "results\\test1\\striker\\striker-5355.pt"
+                ]
+            },
+            {
+                "steps": 5370,
+                "file_path": "results\\test1\\striker\\striker-5370.onnx",
+                "reward": -2.0,
+                "creation_time": 1655102372.8519716,
+                "auxillary_file_paths": [
+                    "results\\test1\\striker\\striker-5370.pt"
+                ]
+            },
+            {
+                "steps": 5608,
+                "file_path": "results\\test1\\striker\\striker-5608.onnx",
+                "reward": 0.8888888888888888,
+                "creation_time": 1655102476.329459,
+                "auxillary_file_paths": [
+                    "results\\test1\\striker\\striker-5608.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5608,
+            "file_path": "results\\test1\\striker.onnx",
+            "reward": 0.8888888888888888,
+            "creation_time": 1655102476.329459,
+            "auxillary_file_paths": [
+                "results\\test1\\striker\\striker-5608.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

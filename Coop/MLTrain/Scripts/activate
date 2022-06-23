@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Ml Train\Coop\MLTrain"
+VIRTUAL_ENV="D:\Coop\Coop\MLTrain"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
