@@ -1,0 +1,162 @@
+{
+    "name": "Joystick",
+    "maps": [
+        {
+            "name": "AircraftMove",
+            "id": "cc4f7e07-d011-4172-b00a-eff7edbe640d",
+            "actions": [
+                {
+                    "name": "LR",
+                    "type": "Value",
+                    "id": "d20c6d59-a0b4-49b4-a201-093a9147d4cb",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UD",
+                    "type": "Value",
+                    "id": "1c856af2-11eb-436b-9704-680d6f6676df",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Thrust",
+                    "type": "Value",
+                    "id": "987c87ae-d8bb-47a4-9210-1974ff4929e6",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "16ab6ee9-7fe0-4eca-95d7-1bd025df1765",
+                    "path": "<Joystick>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10081154-8ea9-4437-9161-ed9e0f5e1edc",
+                    "path": "<Joystick>/stick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "890e466a-f69d-42eb-8630-f1f7364d178f",
+                    "path": "<HID::Thrustmaster, Inc. USB Game Controllers>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Thrust",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Fire",
+            "id": "7d497970-6125-4186-a5a7-f06bc6c29da4",
+            "actions": [
+                {
+                    "name": "MissileA",
+                    "type": "Button",
+                    "id": "3d47a9f7-c426-4463-899d-d36e070da1cc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MissileB",
+                    "type": "Button",
+                    "id": "1acb74fe-f4f4-409b-ba15-8a52cbf47096",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MissileC",
+                    "type": "Button",
+                    "id": "fb14b486-28a7-45de-9235-d7b7c65e94ed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Gun",
+                    "type": "Button",
+                    "id": "fb340eba-8b5b-4237-8e92-bd33419ec0b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2ff6e48f-89b0-4dbb-84a2-6674b9bf8701",
+                    "path": "<HID::Thrustmaster, Inc. USB Game Controllers>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MissileA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13530598-5209-4d65-be3f-a0ec0417973f",
+                    "path": "<HID::Thrustmaster, Inc. USB Game Controllers>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MissileB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0036b1fd-4d07-46a1-b080-e88bb177afc6",
+                    "path": "<HID::Thrustmaster, Inc. USB Game Controllers>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MissileC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02a24162-91b4-42df-8a3b-402d1ce204c9",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

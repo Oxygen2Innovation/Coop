@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4406778544755515087}
   - component: {fileID: 3376920443936285627}
   - component: {fileID: 6877209617870036214}
+  - component: {fileID: 2636820500779033209}
   m_Layer: 0
   m_Name: Radar_building_
   m_TagString: Untagged
@@ -117,6 +118,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6312304854611162585, guid: 602766f2e9f18b944a6568525e810b04, type: 3}
+--- !u!114 &2636820500779033209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027761078355738564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7105182305558d844b74ba6209252305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBase: 0
 --- !u!1 &3116521515141299859
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2309162859187905577}
   - component: {fileID: 8626338305440881026}
+  - component: {fileID: 461893232065507955}
   m_Layer: 0
   m_Name: Radar_
   m_TagString: BaseRadar
@@ -162,6 +177,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 200
   m_Center: {x: 0, y: 19.5, z: 1.5}
+--- !u!114 &461893232065507955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116521515141299859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba877a304226724d8cd2b5037d4fee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 0}
+  pos: {fileID: 0}
+  prefeb: {fileID: 2086592733341046247, guid: 2486c539ed5454e488536029d66b7527, type: 3}
+  col:
+  - {fileID: 8626338305440881026}
+  - {fileID: 8626338305440881026}
 --- !u!1 &3454362480760470991
 GameObject:
   m_ObjectHideFlags: 0

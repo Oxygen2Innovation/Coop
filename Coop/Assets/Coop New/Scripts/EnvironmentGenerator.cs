@@ -1,3 +1,4 @@
+using Assets.Coop_New.Scripts.Display;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,8 @@ public class EnvironmentGenerator : MonoBehaviour
             basePosition.transform.localPosition = spawnLocations[baseLocation].transform.localPosition;
             basePosition.transform.localRotation = spawnLocations[baseLocation].transform.localRotation;
             basePosition.transform.parent = this.transform;
+            Camera.GetComponent<MissionWaypoint>().target = basePosition.transform;
+            Camera.GetComponent<MissionWaypoint>().enabled = true;
         }
     }
 
@@ -54,6 +57,7 @@ public class EnvironmentGenerator : MonoBehaviour
             PlaneController playerPlaneControler = playerPlane.AddComponent<PlaneController>();
             playerPlaneControler._transform = playerPlane.transform;
             playerPlaneControler._rigidbody = playerPlane.GetComponent<Rigidbody>();
+            playerPlaneControler.target = basePrefeb.transform;
             if (i == 0)
             {
                 playerPlaneControler.Camera = Camera;
