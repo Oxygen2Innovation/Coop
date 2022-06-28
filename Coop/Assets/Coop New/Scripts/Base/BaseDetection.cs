@@ -1,7 +1,8 @@
 ﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Assets.Coop_New.Scripts.Base
+namespace Base
 {
     public class BaseDetection : MonoBehaviour
     {
@@ -13,7 +14,9 @@ namespace Assets.Coop_New.Scripts.Base
         {
             if (other.CompareTag("Enemy"))
             {
-                spawn.Spawn(prefeb,pos.transform,3);
+                //StartCoroutine(spawn.Spawn(prefeb, pos.transform, 3));
+                spawn.Spawn(prefeb, pos.transform, 3);
+               
                 foreach (Collider col in col)
                 {
                     col.enabled = false;

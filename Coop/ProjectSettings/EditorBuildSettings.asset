@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/ML-Agents/Examples/PushBlock/Coop_push_block/Scenes/CoopPB.unity
-    guid: 15bbaa236561ff948aeb6a9b001d78e9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

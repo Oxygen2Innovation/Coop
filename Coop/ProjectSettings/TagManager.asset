@@ -7,14 +7,17 @@ TagManager:
   - BaseRadar
   - Missile
   - Enemy
+  - PlayerRadar
+  - EnemyRadar
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 

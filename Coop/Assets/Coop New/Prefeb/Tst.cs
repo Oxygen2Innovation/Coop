@@ -6,8 +6,8 @@ public class Tst : MonoBehaviour
 {
     public float Speed = 10;
 
-    void Update()
+    void FixedUpdate()
     {
-        transform.position += Speed * Time.deltaTime * transform.forward;
+        transform.localPosition += Speed * Time.fixedDeltaTime * transform.forward;
     }
 }

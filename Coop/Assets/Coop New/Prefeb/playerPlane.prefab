@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 914909207225515555}
   - component: {fileID: 7106599077903402461}
   - component: {fileID: 6274566965281119447}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WingTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6518222638688581618}
   - component: {fileID: 1562262505125066438}
   - component: {fileID: 3079654356660303908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElevatorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 980189451429576753}
   - component: {fileID: 5962413101623179068}
   - component: {fileID: 2851063809609289477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5293470430088254483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406663949370831475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.075, y: 0.035, z: -2.5}
+  m_LocalPosition: {x: -5.075, y: -0.083, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3419895140566657045}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 6750852555405270571}
   - component: {fileID: 4298310286512889605}
   - component: {fileID: 6731538858496612806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SidePanels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 3140369687436960475}
   - component: {fileID: 8317777867004450411}
   - component: {fileID: 2180422978279815304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Seats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 7515917565295946847}
   - component: {fileID: 6866780396664892665}
   - component: {fileID: 1467885178343436280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NoseGearBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8563508884772182133}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 2998892869307708259}
   - component: {fileID: 8150964636645671395}
   - component: {fileID: 7556553624996046898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 5339953951893430170}
   - component: {fileID: 8260441840565782357}
   - component: {fileID: 2853837864057643550}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rudder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 7649866007496066589}
   - component: {fileID: 5519697547964896791}
   - component: {fileID: 2779551909009293970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EleronR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 6098060376291468815}
   - component: {fileID: 4601135014682900477}
   - component: {fileID: 846318414310351926}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FlapR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 5401230131180785847}
   - component: {fileID: 7895172395913281002}
   - component: {fileID: 534229478111381924}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pylon3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 653520748439165253}
   - component: {fileID: 6931877332307476616}
   - component: {fileID: 2632985458108401244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AirbrakeRT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 3959219418818670120}
   - component: {fileID: 5061420763978052134}
   - component: {fileID: 2616500887292916788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DoorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 7187389945809038203}
   - component: {fileID: 4801618363670272969}
   - component: {fileID: 7194613050907594021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EleronL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240939734797733736}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1270,7 @@ GameObject:
   - component: {fileID: 2954234906326626537}
   - component: {fileID: 2502082126446004918}
   - component: {fileID: 2940369714029246658}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AirbrakeLB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5896936721916002273}
   - component: {fileID: 5886640240602872468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1409,7 +1409,7 @@ GameObject:
   - component: {fileID: 6038147721927982629}
   - component: {fileID: 3293234177357695355}
   - component: {fileID: 6440612985704440898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,7 +1490,7 @@ GameObject:
   - component: {fileID: 2463884395481771883}
   - component: {fileID: 8876444674837129490}
   - component: {fileID: 388795892092275034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FlapL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5951034083062584159}
   - component: {fileID: 120966899941656748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GBU-16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1628,7 +1628,7 @@ GameObject:
   - component: {fileID: 9084622274916126388}
   - component: {fileID: 3957456219654509882}
   - component: {fileID: 4932516723693653167}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AirbrakeRB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,7 +1707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1671181850001465095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1722,7 +1722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4179384947825506826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.075, y: 0.035, z: -2.5}
+  m_LocalPosition: {x: 5.075, y: -0.083000004, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3419895140566657045}
@@ -1739,7 +1739,7 @@ GameObject:
   - component: {fileID: 7549503942421970499}
   - component: {fileID: 2523951532481829809}
   - component: {fileID: 5830167301428922048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fuselage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,7 +1820,7 @@ GameObject:
   - component: {fileID: 4648309639711016446}
   - component: {fileID: 5627923575691332786}
   - component: {fileID: 2130000608204300911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DoorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1901,7 +1901,7 @@ GameObject:
   - component: {fileID: 7827371128913475294}
   - component: {fileID: 4528344189638627554}
   - component: {fileID: 7568278594719113712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pylon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1982,7 +1982,7 @@ GameObject:
   - component: {fileID: 6255140168864811316}
   - component: {fileID: 2971995951073183682}
   - component: {fileID: 7536500100847502947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ElevatorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 6598837910190237737}
   - component: {fileID: 2183497776017816377}
   - component: {fileID: 4933890900951170117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NoseDoors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2144,7 +2144,7 @@ GameObject:
   - component: {fileID: 343606409980146773}
   - component: {fileID: 4126005826585349235}
   - component: {fileID: 4129711961674742088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 3877499712677091654}
   - component: {fileID: 6016341050747771576}
   - component: {fileID: 7146410519270738233}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Exhaust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 1537949018287315659}
   - component: {fileID: 374305139891945704}
   - component: {fileID: 5780842602942134635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AirbrakeLT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 1413010902439190899}
   - component: {fileID: 963286166621232814}
   - component: {fileID: 2274034979339525873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hubs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2468,7 +2468,7 @@ GameObject:
   - component: {fileID: 802944737124554632}
   - component: {fileID: 4992830938097949160}
   - component: {fileID: 4926205906432735408}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 2926945343413397331}
   - component: {fileID: 1805757256620460015}
   - component: {fileID: 1101422715284074666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pylon1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6883593263390836526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2660,7 +2660,7 @@ GameObject:
   - component: {fileID: 3430778218510663126}
   - component: {fileID: 5652672448759782110}
   - component: {fileID: 1320456465305859841}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GearBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2739,7 +2739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332724861717326754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2771,7 +2771,7 @@ GameObject:
   - component: {fileID: 3765933978560893841}
   - component: {fileID: 5070310899546798859}
   - component: {fileID: 8767937751222362447}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SlatL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2852,7 +2852,7 @@ GameObject:
   - component: {fileID: 7117633267783356836}
   - component: {fileID: 191177835007947395}
   - component: {fileID: 630754002493610816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2933,7 +2933,7 @@ GameObject:
   - component: {fileID: 1115564033984889749}
   - component: {fileID: 4230666596806686957}
   - component: {fileID: 6827347756016430558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HookBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3014,7 +3014,7 @@ GameObject:
   - component: {fileID: 7106256472272091532}
   - component: {fileID: 7106256472290480196}
   - component: {fileID: 7106256472290238222}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7794,7 +7794,7 @@ GameObject:
   - component: {fileID: 7106256472272087824}
   - component: {fileID: 7106256472290379880}
   - component: {fileID: 7106256472290251618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FlameTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12519,7 +12519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9090486357863380670}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12540,6 +12540,69 @@ Transform:
   m_Father: {fileID: 3852187352991851749}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7335441426535242890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7493626230852585340}
+  - component: {fileID: 2841950896689559503}
+  - component: {fileID: 993576261185655429}
+  m_Layer: 3
+  m_Name: Radar
+  m_TagString: PlayerRadar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7493626230852585340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335441426535242890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7083027216224825004}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2841950896689559503
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335441426535242890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 100
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &993576261185655429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335441426535242890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608e02494943e864fb726faa66878b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy:
+    serializedVersion: 2
+    m_Bits: 64
+  missile:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!1 &7339980699886586643
 GameObject:
   m_ObjectHideFlags: 0
@@ -12551,7 +12614,7 @@ GameObject:
   - component: {fileID: 8900287075034162206}
   - component: {fileID: 1517239924622986864}
   - component: {fileID: 4816504919286377068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12630,7 +12693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3547761613319329658}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Missiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12665,7 +12728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3852187352991851749}
   - component: {fileID: 5872295012926860756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AIM-120
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12727,9 +12790,10 @@ GameObject:
   - component: {fileID: 2658536232198568996}
   - component: {fileID: 5349699043664910719}
   - component: {fileID: 2750548755909467755}
-  m_Layer: 0
+  - component: {fileID: 4210177048469795610}
+  m_Layer: 3
   m_Name: playerPlane
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12752,6 +12816,7 @@ Transform:
   - {fileID: 3547761613319329658}
   - {fileID: 1240939734797733736}
   - {fileID: 7106256472272087824}
+  - {fileID: 7493626230852585340}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12796,8 +12861,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11, y: 2.5, z: 4.5}
-  m_Center: {x: 0, y: 0, z: -2}
+  m_Size: {x: 9.931218, y: 1.120754, z: 4.5}
+  m_Center: {x: -0.012427807, y: 0.689623, z: -2}
 --- !u!65 &2658536232198568996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12842,6 +12907,22 @@ MonoBehaviour:
   up: 0
   down: 0
   speed: 0
+--- !u!114 &4210177048469795610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566090346727306262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f2a77e09c8cad4d88c4d73c2165ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blast: {fileID: 19876098, guid: 3972534d344f3684697472572a92ed84, type: 3}
+  missile:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!1 &8219419715163659902
 GameObject:
   m_ObjectHideFlags: 0
@@ -12853,7 +12934,7 @@ GameObject:
   - component: {fileID: 4962081578339132910}
   - component: {fileID: 2190954654288239044}
   - component: {fileID: 6569859897852977668}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Intake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12934,7 +13015,7 @@ GameObject:
   - component: {fileID: 9012828601227110699}
   - component: {fileID: 597938516509436904}
   - component: {fileID: 769512338681586188}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Nozzles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13014,7 +13095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3419895140566657045}
   - component: {fileID: 6735451712067780696}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AIM-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13070,7 +13151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7629955025104814833}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13102,7 +13183,7 @@ GameObject:
   - component: {fileID: 8508336748209803602}
   - component: {fileID: 4268486767404055457}
   - component: {fileID: 3358491275961789706}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13183,7 +13264,7 @@ GameObject:
   - component: {fileID: 7568077253169269306}
   - component: {fileID: 5798023566192908691}
   - component: {fileID: 7577306453671820650}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CanopyGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13264,7 +13345,7 @@ GameObject:
   - component: {fileID: 2606933816349454124}
   - component: {fileID: 3199158651462407199}
   - component: {fileID: 5100072126784478873}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SlatR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

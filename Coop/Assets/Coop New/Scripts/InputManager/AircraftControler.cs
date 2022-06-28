@@ -44,9 +44,6 @@ public class AircraftControler : MonoBehaviour
         controler.Fire.Gun.started += _ => airCraftControler.FireWeapon(3);
     }
 
-    
-
-
     #region Controle
     private void MoveThrust(InputAction.CallbackContext _thrust)
     {

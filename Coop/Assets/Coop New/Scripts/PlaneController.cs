@@ -8,9 +8,6 @@ public class PlaneController : MonoBehaviour
     public Rigidbody _rigidbody;
     public Transform target;
     public AircraftControler aircraftControler;
-    public Camera Camera;
-    public Transform CameraTarget;
-    [Range(0, 1)] public float CameraSpring = 0.96f;
 
     public float MinThrust = 600f;
     public float MaxThrust = 1200f;
@@ -37,10 +34,6 @@ public class PlaneController : MonoBehaviour
     {
         _transform = transform;
         _rigidbody = GetComponent<Rigidbody>();
-        if(Camera != null)
-        {
-            Camera.transform.SetParent(null);
-        }
 
         launchers = new Queue<MissilePositionLaunch>[4];
         for (int i = 0; i < 4; i++)
@@ -57,7 +50,6 @@ public class PlaneController : MonoBehaviour
         
         foreach (MissilePositionLaunch launcher in allLaunchers)
         {
-            print(launcher.name);
             if (launcher.name.StartsWith("AIM-9"))
             {
                 launchers[0].Enqueue(launcher);
@@ -203,6 +195,7 @@ public class PlaneController : MonoBehaviour
         {
             MissilePositionLaunch temp = launchers[LauncherGroup].Dequeue();
             temp.Launch(target, GetComponent<Rigidbody>().velocity);
+            //temp.missilePrefabToLaunch.gameObject.AddComponent<MissileHit>();
             launchers[LauncherGroup].Enqueue(temp);
         }
     }
@@ -215,12 +208,5 @@ public class PlaneController : MonoBehaviour
         localRotation *= Quaternion.Euler(0f, _deltaYaw,  0f);
         _transform.localRotation = localRotation;
         _rigidbody.velocity = _transform.forward * (_currentThrust * Time.fixedDeltaTime);
-
-        if (Camera == null) return;
-        Vector3 cameraTargetPosition = _transform.position + _transform.forward * -8f + new Vector3(0f, 3f, 0f);
-        var cameraTransform = Camera.transform;
-
-        cameraTransform.position = cameraTransform.position * CameraSpring + cameraTargetPosition * (1 - CameraSpring);
-        Camera.transform.LookAt(CameraTarget);
     }
 }

@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 0}
   pos: {fileID: 0}
-  prefeb: {fileID: 2086592733341046247, guid: 2486c539ed5454e488536029d66b7527, type: 3}
+  prefeb: {fileID: 7566090346727306262, guid: a5f8a102f7440594294e9e3d495d8ede, type: 3}
   col:
   - {fileID: 8626338305440881026}
   - {fileID: 8626338305440881026}

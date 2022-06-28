@@ -1,4 +1,5 @@
 using Assets.Coop_New.Scripts.Display;
+using Display;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,6 +47,7 @@ public class EnvironmentGenerator : MonoBehaviour
         int numberOfspawn = 3;
         for (int i = 0; i < numberOfspawn; i++)
         {
+            Vector3 newPos;
 
             GameObject playerPlane = Instantiate(planePrefeb);
 
@@ -58,21 +60,19 @@ public class EnvironmentGenerator : MonoBehaviour
             playerPlaneControler._transform = playerPlane.transform;
             playerPlaneControler._rigidbody = playerPlane.GetComponent<Rigidbody>();
             playerPlaneControler.target = basePrefeb.transform;
-            if (i == 0)
-            {
-                playerPlaneControler.Camera = Camera;
-                playerPlaneControler.CameraTarget = playerPlane.transform;
-            }
-            if(i == 1)
-            {
-                playerPlane.transform.position += new Vector3(-20, 0, -20);
-            }
-            if(i == 2)
-            {
-                playerPlane.transform.position += new Vector3(20, 0, -20);
-            }
 
+            if(i % 2 == 0)
+            {
+                newPos = new Vector3(10, 0, -10);
+            }
+            else
+            {
+                newPos = new Vector3(-20, 0, -20);
+            }
+            playerPlane.transform.position += newPos * i;
             playerPlane.SetActive(true);
+            Camera.GetComponent<CameraController>().targets.Add(playerPlane);
         }
+        Camera.GetComponent<CameraController>().enabled = true;
     }
 }

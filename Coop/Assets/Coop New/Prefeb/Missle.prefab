@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5667898183415278065}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,8 @@ GameObject:
   - component: {fileID: 2572015735122227636}
   - component: {fileID: 9149881917528880710}
   - component: {fileID: 6296148638115592087}
-  m_Layer: 0
+  - component: {fileID: 2036280453619108477}
+  m_Layer: 4
   m_Name: Missle
   m_TagString: Missile
   m_Icon: {fileID: 0}
@@ -153,6 +154,18 @@ MonoBehaviour:
   dropDelay: 0
   ejectVelocity: {x: 0, y: 0, z: 0}
   gravity: 1
+--- !u!114 &2036280453619108477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2958840541241314143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97545038dee11bb4c9ba12757cfccf25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6089467218101662598
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +177,7 @@ GameObject:
   - component: {fileID: 3041070309312291005}
   - component: {fileID: 208047433474234871}
   - component: {fileID: 3730836642345975139}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1306873646652958111}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: TrailFx
   m_TagString: Untagged
   m_Icon: {fileID: 0}

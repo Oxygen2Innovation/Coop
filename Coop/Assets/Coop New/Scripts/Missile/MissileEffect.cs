@@ -169,8 +169,7 @@ public class MissileEffect : MonoBehaviour
         if (explosionFXPrefab != null)
         {
             ParticleSystem explode = GameObject.Instantiate(explosionFXPrefab);
-            explode.transform.position = transform.position;
-            explode.transform.rotation = transform.rotation;
+            explode.transform.SetPositionAndRotation(transform.position, transform.rotation);
 
             // Give the explosion particle system the component to destroy itself after it finished playing.
             RemoveEffect remove = explode.GetComponent<RemoveEffect>();
