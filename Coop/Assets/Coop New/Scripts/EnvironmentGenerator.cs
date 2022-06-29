@@ -12,7 +12,7 @@ public class EnvironmentGenerator : MonoBehaviour
     [SerializeField] GameObject[] spawnLocations;
 
     public float planeSpeed;
-
+    public bool Joystick;
     int positionLength = 0;
     // Start is called before the first frame update
     void Start()
@@ -57,10 +57,10 @@ public class EnvironmentGenerator : MonoBehaviour
             playerPlane.transform.localRotation = spawnLocations[location].transform.localRotation;
             playerPlane.transform.parent = this.transform;
             PlaneController playerPlaneControler = playerPlane.AddComponent<PlaneController>();
+            playerPlaneControler.isKeyboad = !Joystick;
             playerPlaneControler._transform = playerPlane.transform;
             playerPlaneControler._rigidbody = playerPlane.GetComponent<Rigidbody>();
             playerPlaneControler.target = basePrefeb.transform;
-
             if(i % 2 == 0)
             {
                 newPos = new Vector3(10, 0, -10);

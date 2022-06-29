@@ -1,11 +1,12 @@
 ﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Base
 {
     public class SpawnAllys : MonoBehaviour
     {
-        public void Spawn(GameObject objects,Transform pos,int count)
+        public async Task Spawn(GameObject objects,Transform pos,int count,Transform target)
         {
             for(int i = 0; i < count; i++)
             {
@@ -22,17 +23,16 @@ namespace Base
                 pos.position += position * i;
                 GameObject ally = Instantiate(objects);
                 ally.SetActive(false);
+                
                 ally.transform.localPosition = pos.position;
                 ally.transform.localRotation = pos.rotation;
 
-                //PlaneController allyControler = ally.AddComponent<PlaneController>();
-                //allyControler._transform = ally.transform;
-                //allyControler._rigidbody = ally.GetComponent<Rigidbody>();
-                Tst tst = ally.AddComponent<Tst>();
-                ally.GetComponent<AircraftControler>().enabled = true;
+                EnemyController controller = ally.AddComponent<EnemyController>();
+                controller.target = target;
+                
                 ally.SetActive(true);
+                await Task.Yield();
             }
-            //yield return null;
         }
     }
 }

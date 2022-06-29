@@ -10,17 +10,16 @@ namespace Base
         public GameObject pos;
         public GameObject prefeb;
         public Collider[] col;
-        private void OnTriggerEnter(Collider other)
+        private async void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Enemy"))
+            if (other.CompareTag("Player"))
             {
-                //StartCoroutine(spawn.Spawn(prefeb, pos.transform, 3));
-                spawn.Spawn(prefeb, pos.transform, 3);
-               
                 foreach (Collider col in col)
                 {
                     col.enabled = false;
                 }
+                //StartCoroutine(spawn.Spawn(prefeb, pos.transform, 3));
+                await spawn.Spawn(prefeb, pos.transform, 3,other.transform);
             }
         }
     }

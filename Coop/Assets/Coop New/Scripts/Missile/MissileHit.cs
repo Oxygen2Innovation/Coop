@@ -16,16 +16,16 @@ public class MissileHit : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        print(other.name + " trigger");
-        if (other.CompareTag("Ground"))
-        {
-            return;
-        }
-        else
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    print(other.name + " trigger");
+    //    if (other.CompareTag("Ground"))
+    //    {
+    //        return;
+    //    }
+    //    else
+    //    {
+    //        Destroy(other.gameObject);
+    //    }
+    //}
 }

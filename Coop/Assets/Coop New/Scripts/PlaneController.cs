@@ -25,7 +25,7 @@ public class PlaneController : MonoBehaviour
 
     public float thustPower = 500f;
 
-    public bool isKeyboad = true;
+    public bool isKeyboad;
     Queue<MissilePositionLaunch>[] launchers;
     MissilePositionLaunch[] allLaunchers;
     
@@ -114,17 +114,7 @@ public class PlaneController : MonoBehaviour
             }
             _deltaRoll *= Time.deltaTime;
             
-            _deltaYaw= 0f;
-            if (Input.GetKey(KeyCode.E))
-            {
-                _deltaYaw += YawIncreaseSpeed;
-            }
-
-            if (Input.GetKey(KeyCode.Q))
-            {
-                _deltaYaw -= YawIncreaseSpeed;
-            }
-            _deltaYaw *= Time.deltaTime;
+            
 
             //fire
             if (Input.GetKeyDown(KeyCode.B))
@@ -154,10 +144,17 @@ public class PlaneController : MonoBehaviour
 
             _deltaRoll = -(aircraftControler.right + aircraftControler.left);
         }
-        
+        _deltaYaw = 0f;
+        if (Input.GetKey(KeyCode.E))
+        {
+            _deltaYaw += YawIncreaseSpeed;
+        }
 
-        
-        
+        if (Input.GetKey(KeyCode.Q))
+        {
+            _deltaYaw -= YawIncreaseSpeed;
+        }
+        _deltaYaw *= Time.deltaTime;
         UpdateAmmoCounters();
     }
 

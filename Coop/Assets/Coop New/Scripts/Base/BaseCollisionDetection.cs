@@ -10,7 +10,7 @@ public class BaseCollisionDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Missile"))
         {
-            GameObject bases = gameObject.transform.parent.gameObject;
+            GameObject bases = transform.parent.gameObject;
             Destroy(bases);
         }
     }

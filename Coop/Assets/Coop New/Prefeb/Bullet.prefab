@@ -141,7 +141,7 @@ MonoBehaviour:
   trailAlwaysOn: 1
   trailFxPoint: {fileID: 0}
   trailPrefab: {fileID: 0}
-  particleTrailPrefab: {fileID: 19834120, guid: 79e5cbccf196da54580b4decbfdd495e, type: 3}
+  particleTrailPrefab: {fileID: 0}
   explosionFXPrefab: {fileID: 19876098, guid: 3972534d344f3684697472572a92ed84, type: 3}
   playExplosionOnSelfDestruct: 1
   mixerGroup: {fileID: 0}

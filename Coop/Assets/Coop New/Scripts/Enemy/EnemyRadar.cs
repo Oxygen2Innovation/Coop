@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Enemy
@@ -6,15 +7,18 @@ namespace Enemy
     public class EnemyRadar : MonoBehaviour
     {
         public LayerMask player;
-        private void OnTriggerEnter(Collider other)
+        public EnemyController controller;
+        private async void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.layer == player)
-            {
-                //GameObject is Enemy.
-                transform.parent.gameObject.GetComponent<PlaneController>().target = other.gameObject.transform;
-                print("Player Found");
-            }
+            var colliderTask = Task.Run(() => {
+                if (other.CompareTag("Player"))
+                {
+                    //GameObject is Enemy.
+                    controller.target = other.transform;
+                    print("Player Found");
+                }
+            });
+            await colliderTask;
         }
-        
     }
 }
