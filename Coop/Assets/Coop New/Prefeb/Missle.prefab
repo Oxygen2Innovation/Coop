@@ -142,7 +142,7 @@ MonoBehaviour:
   target: {fileID: 0}
   ownShip: {fileID: 0}
   attachPoint: {fileID: 5667898183415278065}
-  guidanceType: 1
+  guidanceType: 0
   seekerCone: 45
   seekerRange: 7500
   overrideInitialSpeed: 0

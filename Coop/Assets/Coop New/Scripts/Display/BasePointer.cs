@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Assets.Coop_New.Scripts.Display
 {
-    public class MissionWaypoint : MonoBehaviour
+    public class BasePointer : MonoBehaviour
     {
 
         // Indicator icon

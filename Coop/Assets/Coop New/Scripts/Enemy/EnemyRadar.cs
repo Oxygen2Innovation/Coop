@@ -8,17 +8,14 @@ namespace Enemy
     {
         public LayerMask player;
         public EnemyController controller;
-        private async void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
         {
-            var colliderTask = Task.Run(() => {
-                if (other.CompareTag("Player"))
-                {
-                    //GameObject is Enemy.
-                    controller.target = other.transform;
-                    print("Player Found");
-                }
-            });
-            await colliderTask;
+            if (other.CompareTag("Player"))
+            {
+                //GameObject is Enemy.
+                controller.target = other.transform;
+                print("Player Found");
+            }
         }
     }
 }

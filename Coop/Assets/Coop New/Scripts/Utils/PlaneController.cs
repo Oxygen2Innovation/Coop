@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ public class PlaneController : MonoBehaviour
 {
     public Transform _transform;
     public Rigidbody _rigidbody;
-    public Transform target;
+    public Transform Target;
     public AircraftControler aircraftControler;
 
     public float MinThrust = 600f;
@@ -26,10 +27,16 @@ public class PlaneController : MonoBehaviour
     public float thustPower = 500f;
 
     public bool isKeyboad;
-    Queue<MissilePositionLaunch>[] launchers;
-    MissilePositionLaunch[] allLaunchers;
+    public bool isActive = true;
+
     
 
+    float d1, d2, tmp; int count,previousCount; bool launched;
+
+    Queue<MissilePositionLaunch>[] launchers;
+    MissilePositionLaunch[] allLaunchers;
+    public GameObject radar;
+    PlanesData data;
     void Awake()
     {
         _transform = transform;
@@ -71,6 +78,11 @@ public class PlaneController : MonoBehaviour
         }
         if (isKeyboad == true) return;
         aircraftControler.enabled = true;
+
+        radar = transform.Find("Radar").gameObject;
+        radar.SetActive(true);
+
+        data = GameObject.Find("Environment").GetComponent<PlanesData>();
     }
     void Update()
     {
@@ -119,19 +131,19 @@ public class PlaneController : MonoBehaviour
             //fire
             if (Input.GetKeyDown(KeyCode.B))
             {
-                FireWeapon(0);
+                FireWeapons(0);
             }
             if (Input.GetKeyDown(KeyCode.N))
             {
-                FireWeapon(1);
+                FireWeapons(1);
             }
             if (Input.GetKeyDown(KeyCode.M))
             {
-                FireWeapon(2);
+                FireWeapons(2);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
-                FireWeapon(3);
+                FireWeapons(3);
             }
         }
         else
@@ -156,6 +168,11 @@ public class PlaneController : MonoBehaviour
         }
         _deltaYaw *= Time.deltaTime;
         UpdateAmmoCounters();
+    }
+
+    public void FireWeapons(int v)
+    {
+        FireWeapon(v, previousCount);
     }
 
     private void UpdateAmmoCounters()
@@ -185,17 +202,46 @@ public class PlaneController : MonoBehaviour
             }
         }
     }
-
-    public void FireWeapon(int LauncherGroup)
+    private void FireWeapon(int LauncherGroup, int missile)
     {
         if (launchers[LauncherGroup].Count > 0)
         {
             MissilePositionLaunch temp = launchers[LauncherGroup].Dequeue();
-            temp.Launch(target, GetComponent<Rigidbody>().velocity);
-            //temp.missilePrefabToLaunch.gameObject.AddComponent<MissileHit>();
+            
+            if (LauncherGroup != 3)
+            {
+                d1 = d2 = tmp = 0;count = 0;
+                if (data.enemyPlanes[missile] == null)
+                {
+                    data.enemyPlanes.RemoveAt(missile);
+                }
+                for (int i=0;  i < data.enemyPlanes.Count; i++)
+                {
+                    tmp = Vector3.Distance(transform.position, data.enemyPlanes[i].transform.position);
+                    if(d1 > tmp)
+                    {
+                        d1 = tmp;
+                    }
+                    d2 = Vector3.Distance(transform.position, data.Base.transform.position);
+                    count = i;
+                }
+                if (d1 < d2)
+                {
+                    //enemy closer
+                    Target = data.enemyPlanes[count-1].transform;
+                    previousCount = count;
+                }
+                else
+                {
+                    Target = data.Base.transform;
+                }
+            }
+            temp.Launch(Target, GetComponent<Rigidbody>().velocity);
             launchers[LauncherGroup].Enqueue(temp);
         }
     }
+
+
 
     void FixedUpdate()
     {
@@ -205,5 +251,21 @@ public class PlaneController : MonoBehaviour
         localRotation *= Quaternion.Euler(0f, _deltaYaw,  0f);
         _transform.localRotation = localRotation;
         _rigidbody.velocity = _transform.forward * (_currentThrust * Time.fixedDeltaTime);
+
+        if (isActive)
+        {
+            radar.SetActive(false);
+            isActive = false;
+        }
+        else
+        {
+            isActive = false;
+            Invoke(nameof(ActiveRadar), 3f);
+        }
+    }
+    private void ActiveRadar()
+    {
+        isActive = true;
+        radar.SetActive(true);
     }
 }

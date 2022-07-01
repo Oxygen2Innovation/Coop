@@ -1248,6 +1248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627095570}
   - component: {fileID: 1627095571}
+  - component: {fileID: 1627095572}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -1285,14 +1286,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 1543542817}
   planePrefeb: {fileID: 7566090346727306262, guid: a29316f75f6b4a84cb5e9eb20c73460b, type: 3}
+  enemyPrefeb: {fileID: 7566090346727306262, guid: a5f8a102f7440594294e9e3d495d8ede, type: 3}
   basePrefeb: {fileID: 675482605383196965, guid: c2dc96dbd707bbf4eb5ee359241ade89, type: 3}
   spawnLocations:
   - {fileID: 1150538215}
   - {fileID: 448960218}
   - {fileID: 1817717085}
   - {fileID: 772300977}
+  planes: {fileID: 0}
   planeSpeed: 0
   Joystick: 1
+--- !u!114 &1627095572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627095569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c988387a052ee74db2fd1db9bc9a261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planes: []
+  enemyPlanes: []
+  Base: {fileID: 0}
 --- !u!4 &1631643478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4130049115745352, guid: 66f7129f685bccb4082b66a0cc4c3c99, type: 3}

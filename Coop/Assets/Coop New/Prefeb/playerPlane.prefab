@@ -1608,7 +1608,7 @@ MonoBehaviour:
   ownShip: {fileID: 7083027216224825004}
   missilePrefabToLaunch: {fileID: 6296148638115592087, guid: 650ea39e84641be4ab59bc982b5c4d30, type: 3}
   missileCount: 2
-  fireDelay: 2
+  fireDelay: 1
   launchPoints:
   - {fileID: 7629955025104814833}
   - {fileID: 6883593263390836526}
@@ -7835,7 +7835,7 @@ ParticleSystem:
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
-  useRigidbodyForVelocity: 1
+  useRigidbodyForVelocity: 0
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -12557,7 +12557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7493626230852585340
 Transform:
   m_ObjectHideFlags: 0
@@ -12766,7 +12766,7 @@ MonoBehaviour:
   ownShip: {fileID: 7083027216224825004}
   missilePrefabToLaunch: {fileID: 6296148638115592087, guid: 650ea39e84641be4ab59bc982b5c4d30, type: 3}
   missileCount: 2
-  fireDelay: 2
+  fireDelay: 1
   launchPoints:
   - {fileID: 1332724861717326754}
   - {fileID: 9090486357863380670}
@@ -12785,11 +12785,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7083027216224825004}
   - component: {fileID: 1834444403173192386}
-  - component: {fileID: 4639522739504681967}
-  - component: {fileID: 8584915168401920688}
-  - component: {fileID: 2658536232198568996}
-  - component: {fileID: 5349699043664910719}
   - component: {fileID: 2750548755909467755}
+  - component: {fileID: 3883475216116115466}
   m_Layer: 3
   m_Name: playerPlane
   m_TagString: Player
@@ -12835,59 +12832,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &4639522739504681967
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566090346727306262}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.25
-  m_Height: 15
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &8584915168401920688
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566090346727306262}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.931218, y: 1.120754, z: 4.5}
-  m_Center: {x: -0.012427807, y: 0.689623, z: -2}
---- !u!65 &2658536232198568996
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566090346727306262}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.55, y: 1, z: 3}
-  m_Center: {x: 0, y: 0, z: -6}
---- !u!65 &5349699043664910719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566090346727306262}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 4, z: 4.5}
-  m_Center: {x: 0, y: 1.5, z: -6}
 --- !u!114 &2750548755909467755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12906,6 +12850,20 @@ MonoBehaviour:
   up: 0
   down: 0
   speed: 0
+--- !u!64 &3883475216116115466
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566090346727306262}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1458469065151103124, guid: 919a607616da7a841853add5efba4414, type: 3}
 --- !u!1 &8219419715163659902
 GameObject:
   m_ObjectHideFlags: 0
@@ -13116,7 +13074,7 @@ MonoBehaviour:
   ownShip: {fileID: 7083027216224825004}
   missilePrefabToLaunch: {fileID: 6296148638115592087, guid: 650ea39e84641be4ab59bc982b5c4d30, type: 3}
   missileCount: 2
-  fireDelay: 2
+  fireDelay: 1
   launchPoints:
   - {fileID: 1671181850001465095}
   - {fileID: 5293470430088254483}

@@ -38,10 +38,10 @@ public class AircraftControler : MonoBehaviour
         controler.AircraftMove.UD.performed += MoveUPDown;
 
         //fire
-        controler.Fire.MissileA.started += _ => airCraftControler.FireWeapon(0);
-        controler.Fire.MissileB.started += _ => airCraftControler.FireWeapon(1);
-        controler.Fire.MissileC.started += _ => airCraftControler.FireWeapon(2);
-        controler.Fire.Gun.started += _ => airCraftControler.FireWeapon(3);
+        controler.Fire.MissileA.started += _ => airCraftControler.FireWeapons(0);
+        controler.Fire.MissileB.started += _ => airCraftControler.FireWeapons(1);
+        controler.Fire.MissileC.started += _ => airCraftControler.FireWeapons(2);
+        controler.Fire.Gun.started += _ => airCraftControler.FireWeapons(3);
     }
 
     #region Controle
